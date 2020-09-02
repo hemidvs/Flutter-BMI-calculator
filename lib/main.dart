@@ -10,8 +10,7 @@ class BMICaculator extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        fontFamily: "Poppins"
-      ),
+        fontFamily: "Ubuntu"),
       debugShowCheckedModeBanner: false,
       home: InputPage(),
     );
