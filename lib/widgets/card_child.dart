@@ -12,13 +12,19 @@ class CardChild extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: <Widget>[
-        Icon(this.icon, size: iconSize, color: label == "Male"? kActiveMaleCardIconColor: kActiveFemaleCardIconColor),
-        SizedBox(height: sizedBoxHeight),
-        Text(this.label, style: kLabelTextStyle)
-      ],
+    return Container(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          Icon(this.icon,
+              size: iconSize,
+              color: label == "Male"
+                  ? kActiveMaleCardIconColor
+                  : kActiveFemaleCardIconColor),
+          SizedBox(height: sizedBoxHeight),
+          Text(this.label, style: kLabelTextStyle)
+        ],
+      ),
     );
   }
 }
