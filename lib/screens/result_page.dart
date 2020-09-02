@@ -25,6 +25,7 @@ class ResultPage extends StatelessWidget {
               Container(
                   padding: EdgeInsets.only(left: 15.0, top: 90.0),
                   child: Text("Your Result", style: kTitleTextStyle)),
+              SizedBox(height: 8),
               Container(
                 child: UsableCard(
                   color: kInactiveCardColor,

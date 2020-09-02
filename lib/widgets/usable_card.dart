@@ -13,9 +13,9 @@ class UsableCard extends StatelessWidget {
     return GestureDetector(
       onTap: onPress,
       child: Container(
-        padding: EdgeInsets.all(15.0),
+        padding: EdgeInsets.all(8.0),
           child: cardChild,
-          margin: EdgeInsets.all(15.0),
+          margin: EdgeInsets.all(8.0),
           decoration: BoxDecoration(boxShadow: [
             BoxShadow(
               color: kTextNumberColor.withOpacity(0.05),
@@ -24,7 +24,7 @@ class UsableCard extends StatelessWidget {
               offset: Offset(0, 8), // changes position of shadow
             ),
           ], borderRadius: BorderRadius.circular(25.0), color: this.color),
-      )
+        )
     );
   }
 }

@@ -25,7 +25,7 @@ const kSmallNumberTextStyle = TextStyle(
     fontSize: 18.0, fontWeight: FontWeight.bold, color: kTextNumberColor);
 
 const kTitleTextStyle = TextStyle(
-    fontSize: 30.0, fontWeight: FontWeight.bold, color: kTextTitleColor);
+    fontSize: 32.0, fontWeight: FontWeight.bold, color: kTextTitleColor);
 
 const kButtonTextStyle = TextStyle(
     fontSize: 20.0, fontWeight: FontWeight.bold, color: kTextButtonColor);

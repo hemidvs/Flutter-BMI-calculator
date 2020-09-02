@@ -14,7 +14,7 @@ class CardChild extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Icon(this.icon,
-              size: 75.0,
+              size: 60.0,
               color: label == "Male"
                   ? kActiveMaleCardIconColor
                   : kActiveFemaleCardIconColor),
