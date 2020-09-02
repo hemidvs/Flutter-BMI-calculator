@@ -1,5 +1,5 @@
 import 'package:bmi_app/constants.dart';
-import 'package:bmi_app/data/caculator.dart';
+import 'package:bmi_app/data/calculator.dart';
 import 'package:bmi_app/screens/result_page.dart';
 import 'package:bmi_app/widgets/bottom_button.dart';
 import 'package:bmi_app/widgets/card_child.dart';
@@ -90,16 +90,21 @@ class _InputPageState extends State<InputPage> {
                       ),
                       SizedBox(height: 8),
                       Text(height.toString(), style: kNumberTextStyle),
-                      Slider(
-                        value: height.toDouble(),
-                        min: minHeight,
-                        max: maxHeight,
-                        onChanged: (double newValue) {
-                          setState(() {
-                            height = newValue.round();
-                          });
-                        },
-                        label: "$height",
+                      SliderTheme(
+                        data: SliderTheme.of(context).copyWith(
+                          activeTrackColor: kBottomContainerColor,
+                        ),
+                        child: Slider(
+                          value: height.toDouble(),
+                          min: minHeight,
+                          max: maxHeight,
+                          onChanged: (double newValue) {
+                            setState(() {
+                              height = newValue.round();
+                            });
+                          },
+                          label: "$height",
+                        ),
                       ),
                     ],
                   ),

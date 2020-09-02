@@ -1,3 +1,4 @@
+import 'package:bmi_app/constants.dart';
 import 'package:flutter/material.dart';
 
 class RoundIconButton extends StatelessWidget {
@@ -15,8 +16,7 @@ class RoundIconButton extends StatelessWidget {
           decoration: BoxDecoration(
               color: Colors.white70,
               borderRadius: BorderRadius.circular(40)),
-          child: Icon(icon)
-      ),
+          child: Icon(icon, color: kBottomContainerColor)),
     );
   }
 }

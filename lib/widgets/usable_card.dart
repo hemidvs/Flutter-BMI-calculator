@@ -23,10 +23,7 @@ class UsableCard extends StatelessWidget {
               blurRadius: 7,
               offset: Offset(0, 8), // changes position of shadow
             ),
-          ],
-            borderRadius: BorderRadius.circular(30.0),
-            color: this.color
-        ),
+          ], borderRadius: BorderRadius.circular(25.0), color: this.color),
       )
     );
   }

@@ -1,9 +1,6 @@
 import 'package:bmi_app/constants.dart';
 import 'package:flutter/material.dart';
 
-const double iconSize = 75.0;
-const sizedBoxHeight = 12.0;
-
 class CardChild extends StatelessWidget {
   final IconData icon;
   final String label;
@@ -17,11 +14,11 @@ class CardChild extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Icon(this.icon,
-              size: iconSize,
+              size: 75.0,
               color: label == "Male"
                   ? kActiveMaleCardIconColor
                   : kActiveFemaleCardIconColor),
-          SizedBox(height: sizedBoxHeight),
+          SizedBox(height: 12.0),
           Text(this.label, style: kLabelTextStyle)
         ],
       ),
